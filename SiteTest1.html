@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soubresaut</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		h1, h2 {
+			margin-bottom: 25px; text-align: center; font-size: 40px;
+		}
+		h1 {
+			margin-top: 50px;
+		}
+		p {
+			font-size: 20px;
+		}
+		.Logo {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+		nav ul {
+			display: flex;
+			list-style-type: none;
+			justify-content: space-evenly;
+		}
+		nav ul li {
+			text-align: center;
+		}
+		header {
+			display: flex;
+			align-items: center;
+			position: fixed;
+			width: 100%;
+			background-color: #FFBD59;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			z-index: 1;
+		}
+		header img {
+			margin-right: 20px;
+			width: 100px;
+			height: auto;
+		}
+		nav {
+			flex-grow: 1;
+		}
+		section {
+			padding-top: 80px;
+		}
+		.carousel-inner img {
+			width: 30%;
+			height: auto;
+		}
+		.carousel-inner .item img {
+			margin: auto;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="c:\Users\matte\OneDrive\Bureau\One drive\Première et seconde\Images\Saved Pictures\Soubresaut.png" alt="Logo Soubresaut" title="Logo Soubresaut" id="logo">
+		<nav>
+			<ul>
+				<li style="font-size: 20px;"><a href="SiteTest1.html">Accueil</a></li>
+				<li style="font-size: 20px;"><a href="archive.html">Journaux et podcasts</a></li>
+				<li style="font-size: 20px;"><a href="formulaire_com.html">Topics</a></li>
+				<li style="font-size: 20px;"><a href="Contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="accueil">
+		<h1>Envie d'un zeste de folie ?</h1>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+			<!-- Indicateurs -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+		
+			<!-- Diapositives -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<a href="J_N_1.html" target="_blank">
+						<img src="c:\Users\matte\Desktop\Cours\L2\Association\Site\1e page des Journaux\JPG\[Octobre] Mise en page web 1-1_page-0001.jpg" alt="Image 1" title="Edition numéro 1">
+					</a>
+				</div>
+		
+				<div class="item">
+					<a href="J_N_2.html" target="_blank">
+						<img src="c:\Users\matte\Desktop\Cours\L2\Association\Site\1e page des Journaux\JPG\[Novembre] Mise en page Web 2-1_page-0001.jpg" alt="Image 2" title="Edition numéro 2">
+					</a>
+				</div>
+		
+				<div class="item">
+					<a href="J_N_3.html" target="_blank">
+						<img src="c:\Users\matte\Desktop\Cours\L2\Association\Site\1e page des Journaux\JPG\[Janvier] Mise en page 3-1_page-0001.jpg" alt="Image 3" title="Edition numéro 3">
+					</a>
+				</div>
+		
+				<div class="item">
+					<a href="J_N_4.html" target="_blank">
+						<img src="c:\Users\matte\Desktop\Cours\L2\Association\Site\1e page des Journaux\JPG\[Mars] Mise en page planche 4-1_page-0001.jpg" alt="Image 4" title="Edition numéro 4">
+					</a>
+				</div>
+			</div>
+		
+			<!-- Contrôles -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Précédent</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Suivant</span>
+			</a>
+		</div>
+		
+		<p style="margin-top: 25px;">Retrouver tous nos numéros de journaux, nos podacsts et un espace d'échange.</p>
+		<h2>Qui sommes-nous ?</h2>
+		<p>Nous sommes une association culturelle de Saint-Etienne, rattaché à l'Université Jean Monnet, dont le but est de promouvoir l'émencipation étudiante et l'accès à la culture pour toutes et tous.</p>
+		<p>Nous vous proposons l'accès un journal gratuit, disponibles dans toutes les BU de l'Université Jean Monnet ainsi que sur le site de manière dématérialisé. Vous retrouvez tout les bons plans culturels.</p>
+		<p>De plus nous vous proposons des podcasts en liens avec des articles de journaux mais également de manière indépendante comme des interviews de professeurs pour que vous puissiez découvrir vos professeurs d'une nouvelle manière.</p>
+	<footer>
+		<p style="margin-top: 25px; font-size: 15px;">&copy; Mattéo Teixeira</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soubresaut</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Soubresaut</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			h1 {
+				margin-bottom: 25px; text-align: center; font-size: 40px; margin-top: 50px;
+			}
+			nav ul {
+				display: flex;
+				list-style-type: none;
+				justify-content: space-evenly;
+			}
+			nav ul li {
+				text-align: center;
+			}
+			header {
+				display: flex;
+				align-items: center;
+				position: fixed;
+				width: 100%;
+				background-color: #FFBD59;
+				box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+				z-index: 1;
+			}
+			header img {
+				margin-right: 20px;
+				width: 100px;
+				height: auto;
+			}
+			nav {
+				flex-grow: 1;
+			}
+			section {
+				padding-top: 80px;
+			}
+			.image-container {
+ 				 display: flex;
+ 				 justify-content: center;
+			}
+			.image-container img {
+ 				 width: 80%;
+ 				 height: auto;
+				 margin: 25px;
+			}
+			#journal_img {
+                 width: 30%;
+                 display: block;
+                 margin: 0 auto;
+            }
+            .espace_telechargement {
+                 text-align: center;
+                 width: 25%;
+                 border: 2px solid blue;
+                 padding: 20px;
+                 margin: 20px auto;
+            }
+            .comment-container {
+                 width: 50%;
+                 margin: 20px auto;
+            }
+            .comment-container label {
+                 display: block;
+                 margin-bottom: 5px;
+            }
+            .comment-container input,
+            .comment-container textarea {
+                 width: 100%;
+                 margin-bottom: 10px;
+            }
+            .comment-container button {
+                 background-color: blue;
+                 color: white;
+                 border: none;
+                 padding: 10px;
+                 cursor: pointer;
+            }
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="c:\Users\matte\OneDrive\Bureau\One drive\Première et seconde\Images\Saved Pictures\Soubresaut.png" alt="Logo Soubresaut" title="Logo Soubresaut">
+			<nav>
+				<ul>
+					<li style="font-size: 20px;"><a href="SiteTest1.html">Accueil</a></li>
+					<li style="font-size: 20px;"><a href="archive.html">Journaux et podcasts</a></li>
+					<li style="font-size: 20px;"><a href="formulaire_com.html">Topics</a></li>
+					<li style="font-size: 20px;"><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+        <section id="numéro">
+			<h1>3e numéro du journal Pulp Culture</h1>
+            <img id="journal_img" src="c:\Users\matte\Desktop\Cours\L2\Association\Site\1e page des Journaux\JPG\[Janvier] Mise en page 3-1_page-0001.jpg" alt="Troisième édition">
+            <div class="espace_telechargement">
+                <a href="c:\Users\matte\Desktop\Cours\L2\Association\Journaux\[Janvier] Mise en page 4.pdf" download="nom_du_fichier.pdf">Télécharger le numéro</a>
+            </div>
+            <div class="comment-container">
+                <form action="/submit-comment" method="post">
+                  <label for="name">Nom :</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="email">Adresse e-mail :</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="comment">Commentaire :</label>
+                  <textarea id="comment" name="comment" rows="4" required></textarea>
+                  <button type="submit">Envoyer le commentaire</button>
+                </form>
+              </div>
+</body>
+</html>
